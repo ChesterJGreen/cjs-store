@@ -1,1 +1,14 @@
 /* BASIC STYLES HERE */
+.bg-city {
+   background-image: url('../img/citybackground.jpg');
+   background-position: center;
+   background-size: cover;
+}
+
+.product-img {
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 50vh;
+   min-width: 200px;
+}

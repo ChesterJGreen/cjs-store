@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +13,68 @@
     <title>cjs-store</title>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
-            <a class="navbar-brand" href="#">
+<style>
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
+
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+
+<body class="debug">
+    <header class="container-fluid">
+        <nav class="row navbar navbar-dark navbar-expand bg-dark text-light justify-content-between">
+            <a class="navbar-brand col-3" href="#">
                 <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
-                <span class="ml-2">cjs-store</span>
+                <span class="ml-2">CJ's Store</span>
             </a>
+            <div class="col-3">
+                <button class="btn btn-success">Money</button>
+            </div>
+            <div class="col-3">
+                <h3>$0.00</h3>
+            </div>
+            <div class="col-3 d-flex justify-content-end">
+                <button class="btn btn-primary">CART</button>
+            </div>
         </nav>
     </header>
-    <main class="container">
-        <div id="app"></div>
+    <main class="container-fluid bg-city">
+        <div class="row py-3">
+            <div class="col-lg-3 col-md-6 mt-3">
+                <div class="bg-light rounded shadow-light card p-2">
+                    <div class="product-img" style="background-image: url('./assets/img/coffee\ cup.jpg')"></div>
+                    <h4 class="text-center m-2"><b>TITLE - $0.00</b></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugit accusamus omnis ex
+                        tempora quas!</p>
+                    <div class="d-flex justify-content-between">
+                        <h5>STOCK</h5><button class="btn btn-primary">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mt-3">
+                <div class="bg-light rounded shadow-light card p-2">
+                    <div class="product-img" style="background-image: url('./assets/img/coffee\ cup.jpg')"></div>
+                    <h4 class="text-center m-2"><b>TITLE - $0.00</b></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugit accusamus omnis ex
+                        tempora quas!</p>
+                    <div class="d-flex justify-content-between">
+                        <h5>STOCK</h5><button class="btn btn-primary">ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="bg-dark text-light">
         <div class="text-center">
