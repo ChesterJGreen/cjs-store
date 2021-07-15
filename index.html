@@ -32,7 +32,7 @@
 </style>
 
 
-<body class="debug">
+<body class="">
     <header class="container-fluid">
         <nav class="row navbar navbar-dark navbar-expand bg-dark text-light justify-content-between">
             <a class="navbar-brand col-3" href="#">
@@ -46,34 +46,60 @@
                 <h3>$0.00</h3>
             </div>
             <div class="col-3 d-flex justify-content-end">
-                <button class="btn btn-primary">CART</button>
+                <button class="btn btn-primary" onclick="app.cartController._draw()">CART</button>
             </div>
         </nav>
     </header>
     <main class="container-fluid bg-city">
+        <div class="row pt-3 bg-light text-dark" id="cart">
+            <div class="col-12 p-1 border">
+                <div class="row justify-content-between ml-1">
+                    <div class="col cart-img" style="background-image: url(./assets/img/coffee\ cup.jpg)"></div>
+                    <div class="col-3 d-flex align-items-end">
+                        <h3>TITLE</h3>
+                    </div>
+                    <div class="col-3  d-flex align-items-end text-">
+                        <h6><em>CART: 1</em></h6>
+                    </div>
+                    <div class="col-3 text-primary d-flex align-items-end">
+                        <h5>SUBTOTAL</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 p-1 border">
+                <div class="row justify-content-between ml-1">
+                    <div class="col cart-img" style="background-image: url(./assets/img/coffee\ cup.jpg)"></div>
+                    <div class="col-3 d-flex align-items-end">
+                        <h3>TITLE</h3>
+                    </div>
+                    <div class="col-3  d-flex align-items-end text-">
+                        <h6><em>CART: 1</em></h6>
+                    </div>
+                    <div class="col-3 text-primary d-flex align-items-end">
+                        <h5>SUBTOTAL</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 p-1 border">
+                <div class="row justify-content-between ml-1">
+                    <div class="col cart-img" style="background-image: url(./assets/img/coffee\ cup.jpg)"></div>
+                    <div class="col-3 d-flex align-items-end">
+                        <h3>TITLE</h3>
+                    </div>
+                    <div class="col-3  d-flex align-items-end text-">
+                        <h6><em>CART: 1</em></h6>
+                    </div>
+                    <div class="col-3 text-primary d-flex align-items-end">
+                        <h5>SUBTOTAL</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-right">
+                <h3 class="px-3"><b>TOTAL: </b></h3>
+            </div>
+        </div>
         <div class="row py-3" id="animals">
-            <div class="col-lg-3 col-md-6 mt-3">
-                <div class="bg-light rounded shadow-light card p-2">
-                    <div class="product-img" style="background-image: url('./assets/img/coffee\ cup.jpg')"></div>
-                    <h4 class="text-center m-2"><b>TITLE - $0.00</b></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugit accusamus omnis ex
-                        tempora quas!</p>
-                    <div class="d-flex justify-content-between">
-                        <h5>STOCK</h5><button class="btn btn-primary">ADD</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mt-3">
-                <div class="bg-light rounded shadow-light card p-2">
-                    <div class="product-img" style="background-image: url('./assets/img/coffee\ cup.jpg')"></div>
-                    <h4 class="text-center m-2"><b>TITLE - $0.00</b></h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugit accusamus omnis ex
-                        tempora quas!</p>
-                    <div class="d-flex justify-content-between">
-                        <h5>STOCK</h5><button class="btn btn-primary">ADD</button>
-                    </div>
-                </div>
-            </div>
+            <!-- animals array drawn here -->
         </div>
     </main>
     <footer class="bg-dark text-light">

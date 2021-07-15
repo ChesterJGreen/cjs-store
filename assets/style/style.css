@@ -10,5 +10,13 @@
    background-repeat: no-repeat;
    background-position: center;
    height: 50vh;
-   min-width: 200px;
+   min-width: 15vw;
+}
+
+.cart-img {
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 40vh;
+   max-width: 15vw;
 }
