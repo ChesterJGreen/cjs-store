@@ -8,7 +8,7 @@
 .product-img {
    background-size: cover;
    background-repeat: no-repeat;
-   background-position: center;
+   background-position: center top;
    height: 50vh;
    min-width: 15vw;
 }
