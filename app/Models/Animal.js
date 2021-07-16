@@ -15,6 +15,7 @@ export default class Animal {
         this.subtotal = (cart * price).toLocaleString("en-US", { style: 'currency', currency: 'USD' })
     }
 
+
     get Template() {
         return /*html*/`<div class="col-lg-3 col-md-6 mt-3">
       <div class="bg-light rounded shadow-light card p-2" id="${this.id}">
@@ -22,13 +23,11 @@ export default class Animal {
           <h4 class="text-center m-2"><b>${this.name} - ${this.price}</b></h4>
           <p>${this.description}</p>
           <div class="d-flex justify-content-between">
-              <h5>STOCK: ${this.stock}</h5><button class="btn btn-primary">ADD</button>
+              <h5>STOCK: ${this.stock}</h5><button class="btn btn-primary onclick="generateId()">ADD</button>
           </div>
       </div>
   </div>`
     }
 
-    get CartTemplate() {
-        return ``
-    }
+
 }
